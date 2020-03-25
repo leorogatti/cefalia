@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,34 +14,39 @@ header {
   margin-bottom: 3rem;
 }
 
-.header {
+header {
   align-items: center;
-
   display: flex;
   justify-content: space-between;
 }
 
-.header nav ul {
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
   display: flex;
 }
 
-.header nav ul li {
+header nav ul li {
   list-style: none;
 }
 
-.header nav ul li a {
+header nav ul li a {
   color: #192038;
   margin-right: 32px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 37px;
 }
 
-#logo {
+header img {
   margin-bottom: 10px;
 }
 
-.botao01 {
+.btn {
   display: block;
   padding: 8px 26px;
   text-align: center;
@@ -47,151 +56,118 @@ header {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+  display: inline-block;
+}  
+                    
+.btn-large {
+  padding: 1.5rem 4rem;
+}  
+
+.btn-full {
+  border-radius: 0px 0px 3px 3px;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
-.botao01:hover {
+.btn:hover {
   background-color: #6bcafa;
-}
+}  
+
 
 main {
   color: #E5E5E5;
-}
+}  
 
 .container {
   margin: 0 auto;
   width: 1200px;
-}
+}  
 
 h1.h1a {
   margin: 0;
-}
+}  
 
-.h1a{
-
+section.info article h1 {
   color: #192038;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 37px;
-}
+  font-size: 2rem;
+}  
 
-.h2a {
+section.info article h2 {
   height: 28px;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
   color: #34b6f8;
-}
+}  
 
-.pa {
-  width: 550px;
+section.info article p {
+  width: 70%;
   height: 160px;
-  line-height: 34px;
   color: #6D788C;
-}
+}  
 
-.botao02 {
-  display: block;
-  text-align: center;
-  background: #34b6f8;
-  transition: all .1s;
-  border-radius: 3px;
-  cursor: pointer;
-  text-decoration: none;
-  width: 200px;
-  padding: 16px;
-  color: #fff;
-}
-
-.botao02:hover {
-  background-color: #6bcafa;
-}
-
-.flex{
+.call-to-action {
   display: flex;
-  justify-content: space-between;
-}
+  flex-direction: row;
+}  
 
-.planos {
+.plans {
   margin-top: 7rem;
   background-color: #F2F3F6;
-}
+}  
 
-.h1b {
+.plans h1 {
   padding-top: 40px;
   text-align: center;
   color: #192038;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 37px;
-}
+  margin-bottom: 4rem;
+}  
 
-.titulo {
-  color: #34b6f8;
-  font-size: 28px;
-  line-height: 27px;
-  text-align: center;
+.prices {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 4rem;
 }
 
 .card {
-  width: 320px;
+  width: 320px ;
   background-color: #fff;
   position: relative;
   border-radius: 3px;
-}
+}  
 
 .card:nth-child(2):hover .mejor-costo {
   transform: scale(1.2);
-}
+}    
 
-.pb {
-  font-size: 14px;
+.card h2 {
+  color: #34b6f8;
+  font-size: 1.75rem;
+  text-align: center;
+}    
+
+.item p {
+  font-size: 0.875rem;
   line-height: 24px;
   color: #6D788C;
   margin-left: 50px;
-}
+}  
 
-.vetor {
+.item {
   display: flex; 
   margin: 0 auto;
   width: 260px;
-}
-
-.botao03 {
-  display: block;
-  text-align: center;
-  background: #34b6f8;
-  transition: all .1s;
-  border-radius: 0px 0px 3px 3px;
-  cursor: pointer;
-  text-decoration: none;
-  width: 320px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  color: #fff;
-  font-size: 42px;
-  margin-top: 3rem;
-}
-
-.botao03:hover {
-  background-color: #6bcafa;
-}
-
-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 2.5rem 0;
-}
-
-p.pb {
-  margin-left: 2rem;
-}
-
-h4.titulo {
-  margin: 1.5rem;
-}
+}  
 
 .mejor-costo {
   margin-top: -40px;
@@ -201,8 +177,6 @@ h4.titulo {
   right: 0;
   transition: all .2s;
 }
-
-
 
 footer {
   background-color: #E8E9ED;
@@ -227,7 +201,7 @@ ol li {
 
 ol li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #6D788C;
 }
 
@@ -261,5 +235,64 @@ ol li a {
 
 .facebook:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+
+  .call-to-action {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }  
+
+  .call-to-action section:nth-child(1) {
+    order: 2;
+  }
+
+  .call-to-action section:nth-child(2) {
+    order: 1;
+  }
+
+  section.image {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  section.image img {
+    width: 80%;
+  }
+
+  section.info article {
+    width: 100%;
+    padding: 0 1rem;
+  }  
+  
+  section.info article p {
+    margin-top: 3rem;
+    width: 100%;
+  }  
+  
+  section.info div {
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .btn.btn-large {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .prices {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-top: 4rem;
+  }
+  
 }
 
