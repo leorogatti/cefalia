@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  background: #edf1f7;
+  margin-bottom: 3rem;
+}
+
+.header {
+  align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li {
+  list-style: none;
+}
+
+.header nav ul li a {
+  color: #192038;
+  margin-right: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 37px;
+}
+
+#logo {
+  margin-bottom: 10px;
+}
+
+.botao01 {
+  display: block;
+  padding: 8px 26px;
+  text-align: center;
+  background: #34b6f8;
+  transition: all .1s;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.botao01:hover {
+  background-color: #6bcafa;
+}
+
+main {
+  color: #E5E5E5;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+h1.h1a {
+  margin: 0;
+}
+
+.h1a{
+
+  color: #192038;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.h2a {
+  height: 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #34b6f8;
+}
+
+.pa {
+  width: 550px;
+  height: 160px;
+  line-height: 34px;
+  color: #6D788C;
+}
+
+.botao02 {
+  display: block;
+  text-align: center;
+  background: #34b6f8;
+  transition: all .1s;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 200px;
+  padding: 16px;
+  color: #fff;
+}
+
+.botao02:hover {
+  background-color: #6bcafa;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.planos {
+  margin-top: 7rem;
+  background-color: #F2F3F6;
+}
+
+.h1b {
+  padding-top: 40px;
+  text-align: center;
+  color: #192038;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.titulo {
+  color: #34b6f8;
+  font-size: 28px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.card {
+  width: 320px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 3px;
+}
+
+.card:nth-child(2):hover .mejor-costo {
+  transform: scale(1.2);
+}
+
+.pb {
+  font-size: 14px;
+  line-height: 24px;
+  color: #6D788C;
+  margin-left: 50px;
+}
+
+.vetor {
+  display: flex; 
+  margin: 0 auto;
+  width: 260px;
+}
+
+.botao03 {
+  display: block;
+  text-align: center;
+  background: #34b6f8;
+  transition: all .1s;
+  border-radius: 0px 0px 3px 3px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 320px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  color: #fff;
+  font-size: 42px;
+  margin-top: 3rem;
+}
+
+.botao03:hover {
+  background-color: #6bcafa;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+
+p.pb {
+  margin-left: 2rem;
+}
+
+h4.titulo {
+  margin: 1.5rem;
+}
+
+.mejor-costo {
+  margin-top: -40px;
+  margin-right: -45px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  transition: all .2s;
+}
+
+
+
+footer {
+  background-color: #E8E9ED;
+  padding-bottom: 9.188rem;
+}
+
+ol {
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #6D788C;
+}
+
+ol li {
+  padding: 0;
+  margin-top: 3.25rem;
+  list-style: none;
+}
+
+ol li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #6D788C;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.twitter {
+  transition: all .2s;
+  margin-right: 1.25rem;
+}
+
+.instagram {
+  transition: all .2s;
+  margin-right: 1.25rem;
+}
+
+.facebook {
+  transition: all .2s;
+}
+
+.twitter:hover {
+  transform: scale(1.2);
+}
+
+.instagram:hover {
+  transform: scale(1.2);
+}
+
+.facebook:hover {
+  transform: scale(1.2);
+}
+
