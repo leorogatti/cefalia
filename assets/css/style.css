@@ -166,8 +166,8 @@ section.info article p {
 }  
 
 .mejor-costo {
-  margin-top: -50px;
-  margin-right: -25px;
+  margin-top: -40px;
+  margin-right: -45px;
   z-index: 1;
   position: absolute;
   right: 0;
@@ -289,11 +289,20 @@ footer ol li a {
   .card {
     margin-top: 4rem;
   }
+  
+  .mejor-costo {
+    margin-top: -40px;
+    margin-right: -25px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+  }
 
   .card:nth-child(2):hover .mejor-costo {
     transform: scale(1.0);
   }    
   
+
 }
 
 @media (max-width: 600px) {
