@@ -14,16 +14,12 @@ header {
   margin-bottom: 3rem;
 }
 
-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 .header-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header nav ul {
@@ -170,8 +166,8 @@ section.info article p {
 }  
 
 .mejor-costo {
-  margin-top: -40px;
-  margin-right: -45px;
+  margin-top: -50px;
+  margin-right: -25px;
   z-index: 1;
   position: absolute;
   right: 0;
@@ -180,10 +176,10 @@ section.info article p {
 
 footer {
   background-color: #E8E9ED;
-  padding-bottom: 9.188rem;
+  padding-bottom: 4.188rem;
 }
 
-ol {
+footer ol {
   width: 100%;
   padding-left: 0;
   margin: 0;
@@ -193,13 +189,13 @@ ol {
   border-bottom: 1px solid #6D788C;
 }
 
-ol li {
+footer ol li {
   padding: 0;
   margin-top: 3.25rem;
   list-style: none;
 }
 
-ol li a {
+footer ol li a {
   text-decoration: none;
   font-size: 0.875rem;
   color: #6D788C;
@@ -293,6 +289,55 @@ ol li a {
   .card {
     margin-top: 4rem;
   }
+
+  .card:nth-child(2):hover .mejor-costo {
+    transform: scale(1.0);
+  }    
   
 }
 
+@media (max-width: 600px) {
+  .header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  header img {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) { 
+  .redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  footer ol {
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #6D788C;
+  }
+
+  footer ol li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #6D788C;
+  }
+  
+  .instagram {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
