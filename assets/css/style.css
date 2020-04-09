@@ -47,12 +47,22 @@ header nav ul li a {
   font-weight: bold;
 }
 
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
 header nav ul li:last-child a {
   margin-right: 0;
 }
 
 .highlight {
   color: #EA575E;
+  transition: all .3s;
+}
+
+
+.highlight:hover {
+  color: #ee777b;
 }
 
 .container {
@@ -117,6 +127,10 @@ section.image img {
   text-align: center;
   display: inline-block;
   font-size: 0.875rem;
+}
+
+.btn:hover {
+  background: #ee777b;
 }
 
 .btn-start {
@@ -317,6 +331,10 @@ footer h1 {
 .footer-end a {
   text-decoration: none;
   color: #fff;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1199px) {
