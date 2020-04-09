@@ -350,13 +350,21 @@ footer ul li a:hover {
     height: 41px;
   }
 
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
   .container-mobile {
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 100%;
   }
 
   .plans {
-    width: 375px;
+    width: 100%;
     padding: 2rem 0;
   }
 
@@ -365,7 +373,7 @@ footer ul li a:hover {
   }
 
   .cards {
-    max-width: 375px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -389,7 +397,7 @@ footer ul li a:hover {
   }
   
   footer {
-    width: 375px;
+    width: 100%;
   }
 
   section.image {
