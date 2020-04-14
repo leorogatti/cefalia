@@ -61,35 +61,5 @@ section p {
 
 img {
   margin: 2rem 10rem 0 0;
+  width: 500px;
 }
-
-@media (max-width: 600px) {
-  .hide-mobile {
-    display: none;
-  }
-  
-  .hide-full {
-    display: initial;
-  }
-
-  section span{
-   padding-top: 0;
-   margin-left: 2.5rem;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  section p {
-    color: black;
-    font-size: 3rem;
-    line-height: 6.5rem;
-    text-align: center;
-    margin-left: 3rem;
-    width: 150%;
-  }
-  
-} 
