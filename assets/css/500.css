@@ -6,7 +6,7 @@
 body {
   font-family: 'Paytone One', sans-serif;
   height: 100vh;
-  background: url("../img/background-dots-blue.png") repeat;
+  background: url("../img/background-dots-red.png") repeat;
 }
 
 .background-arrow {
@@ -55,11 +55,11 @@ section span {
 
 section p {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 6.5rem;
 }
 
 img {
-  margin: 2rem 10rem 0 0;
+  margin: 25% 6rem 0 0;
   width: 500px;
 }
