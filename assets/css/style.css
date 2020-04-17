@@ -133,6 +133,10 @@ section.image img {
   background: #ee777b;
 }
 
+.mobile-redes-sociais {
+  text-transform: uppercase;
+}
+
 .btn-start {
   margin-top: 5rem;
 }
