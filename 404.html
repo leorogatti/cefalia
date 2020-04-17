@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/404.css">
+  <link rel="stylesheet" href="assets/css/404-mobile.css">
+  <link rel="stylesheet" href="assets/css/reset-mobile.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/gallery.theme.css">
@@ -12,15 +14,30 @@
   <title>404</title>
 </head>
 <body>
-  <div class="background-arrow hide-mobile">
-    <section class="container">
-      <span>404</span>
-      <p>La página que estás buscando no está aquí.</p>
-      <a class="btn" href="index.html">Volver a home</a> 
-    </section>
-    <section>
-      <img src="assets/img/404-guy.svg" alt="404 Error">
-    </section>
-  </div>
+  <section class="full">
+    <div class="background-arrow hide-mobile">
+      <section class="container hide-mobile">
+        <span>404</span>
+        <p>La página que estás buscando no está aquí.</p>
+        <a class="btn hide-mobile" href="index.html">Volver a home</a> 
+      </section>
+      <section>
+        <img class="hide-mobile" src="assets/img/404-guy.svg" alt="404 Error">
+      </section>
+    </div>
+  </section>
+
+  <section class="mobile">
+    <div class="background-arrow-mobile hide-full">
+      <section class="container hide-full">
+        <span>404</span>
+        <p>La página que estás buscando no está aquí.</p>
+        <a class="btn-mobile hide-full" href="index.html">Volver a home</a> 
+      </section>
+      <section>
+        <img class="hide-full" src="assets/img/404-guy.svg" alt="404 Error">
+      </section>
+    </div>
+  </section>
 </body>
 </html>

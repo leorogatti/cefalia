@@ -1,0 +1,15 @@
+  
+  .hide-full {
+    display: none;
+  }
+
+@media only screen and (max-width: 600px) {
+  
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-full {
+    display: initial;
+  }
+}

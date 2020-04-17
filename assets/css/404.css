@@ -60,6 +60,7 @@ section p {
 }
 
 img {
+  position: fixed;
   margin: 6% 6rem 0 0;
   width: 500px;
 }
