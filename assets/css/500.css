@@ -6,16 +6,23 @@
 body {
   font-family: 'Paytone One', sans-serif;
   height: 100vh;
+  max-height: 100vh;
   background: url("../img/background-dots-red.png") repeat;
 }
 
-.background-arrow {
-  background: url("../img/background-arrow.svg") no-repeat; 
-  background-position: bottom left;
-  background-size: contain;
+section {
   display: flex;
+}
+
+.background-arrow {
+  background: url("../img/background-arrow.svg") no-repeat ; 
+  background-position: top right;
+  background-size: cover;
+  flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  font-size: 14px;
+  width: 60%;
 }
 
 .btn {
@@ -39,27 +46,57 @@ body {
 }
 
 .container {
-  margin: 0 0 0 5rem;
-  width: 40%;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
-.error-guy {
+section div:nth-child(2) {
   display: flex;
+  justify-content: center;
+  width: 40%;
+  max-height: 100vh;
 }
 
-section span {
+
+section h1 {
   color: #EA575E;
   font-size: 18.5rem;
-  padding-top: 20rem;
+  padding: 0 2rem 0 1rem;
+  font-weight: normal;
 }
 
 section p {
   color: #fff;
-  font-size: 3rem;
+  font-size: 4em;
   line-height: 6.5rem;
+  padding: 0 2rem 0 1rem;
 }
 
 img {
-  margin: 25% 6rem 0 0;
-  width: 500px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .background-arrow {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .background-arrow {
+    font-size: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .background-arrow {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1000) {
+  .background-arrow {
+    font-size: 6px;
+  }
 }
