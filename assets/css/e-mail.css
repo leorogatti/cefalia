@@ -6,16 +6,23 @@
 body {
   font-family: 'Paytone One', sans-serif;
   height: 100vh;
+  max-height: 100vh;
   background: url("../img/background-dots-yellow.png") repeat;
 }
 
 .background-arrow {
-  background: url("../img/background-arrow.svg") no-repeat; 
-  background-position: bottom left;
-  background-size: contain;
-  display: flex;
+  background: url("../img/background-arrow.svg") no-repeat ; 
+  background-position: top right;
+  background-size: cover;
+  flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  font-size: 14px;
+  width: 60%;
+}
+
+section {
+  display: flex;
 }
 
 .btn {
@@ -32,6 +39,7 @@ body {
   display: inline-block;
   font-size: 2rem;
   margin-top: 7rem;
+  width: 250px;
 }
 
 .btn:hover {
@@ -43,24 +51,30 @@ body {
   width: 40%;
 }
 
-.error-guy {
+section div:nth-child(2) {
   display: flex;
+  justify-content: center;
+  width: 40%;
+  max-height: 100vh;
 }
 
 section h1 {
   color: #EA575E;
-  font-size: 4.5rem;
-  margin: 8rem 0 4rem 0;
-  line-height: 6.5rem;
+  font-size: 4rem;
+  padding: 2em 3rem 0 0;
+  font-weight: normal;
+  width: 650px;
 }
+
 
 section p {
   color: #fff;
-  font-size: 3rem;
-  line-height: 6.5rem;
+  font-size: 2.5rem;
+  padding: 2em 2rem 0 0;
+  line-height: 4.5rem;
+  width: 600px;
 }
 
 img {
-  margin: 35% 7rem 0 0;
-  width: 500px;
+  width: 100%;
 }
