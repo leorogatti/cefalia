@@ -22,7 +22,6 @@
     font-weight: normal;
     text-align: center;
     margin: 5rem auto;
-    min-width: 20px;
   }
 
   section p {
@@ -151,5 +150,23 @@
 
   .btn-mobile {
     padding: 1.5rem 4.5rem;
+  }
+} 
+
+
+@media only screen and (max-width: 450px ) {
+  section h1 {
+    font-size: 1.5rem;
+    margin-top: 10rem;
+  }
+  
+  section p {
+    font-size: 1em;
+    line-height: 2rem;
+    width: 300px;
+  }
+
+  .btn-mobile {
+    padding: 1.5rem 3.5rem;
   }
 } 
