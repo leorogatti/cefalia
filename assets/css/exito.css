@@ -6,16 +6,23 @@
 body {
   font-family: 'Paytone One', sans-serif;
   height: 100vh;
+  max-height: 100vh;
   background: url("../img/background-dots-gray.png") repeat;
 }
 
 .background-arrow {
-  background: url("../img/background-arrow.svg") no-repeat; 
-  background-position: bottom left;
-  background-size: contain;
-  display: flex;
+  background: url("../img/background-arrow.svg") no-repeat ; 
+  background-position: top right;
+  background-size: cover;
+  flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  font-size: 14px;
+  width: 60%;
+}
+
+section {
+  display: flex;
 }
 
 .btn {
@@ -26,12 +33,12 @@ body {
   text-decoration: none;
   color: #f5f5f5;
   font-family: 'Paytone One', sans-serif;
-  display: block;
   transition: all .1s;
   text-align: center;
   display: inline-block;
   font-size: 2rem;
   margin-top: 7rem;
+  width: 250px;
 }
 
 .btn:hover {
@@ -43,24 +50,58 @@ body {
   width: 40%;
 }
 
-.error-guy {
-  display: flex;
+.container {
+  padding: 0 1rem;
 }
+
+section div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  max-height: 100vh;
+}
+
 
 section h1 {
   color: #EA575E;
   font-size: 4.5rem;
-  margin: 8rem 0 4rem 0;
-  line-height: 6.5rem;
+  padding: 3em 2rem 0 0;
+  font-weight: normal;
 }
 
 section p {
   color: #fff;
-  font-size: 3rem;
-  line-height: 6.5rem;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  width: 700px;
+  padding: 2rem 2rem 0 0;
 }
 
 img {
-  margin: 35% 5rem 0 0;
-  width: 600px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .background-arrow {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .background-arrow {
+    font-size: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .background-arrow {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 1000) {
+  .background-arrow {
+    font-size: 6px;
+  }
 }
