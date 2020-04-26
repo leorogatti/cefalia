@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/exito.css">
+  <link rel="stylesheet" href="assets/css/exito/exito.css">
   <link rel="stylesheet" href="assets/css/exito/exito-mobile.css">
   <link rel="stylesheet" href="assets/css/reset-mobile.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -16,14 +16,29 @@
 <body>
   <section class="full">
     <div class="background-arrow hide-mobile">
-      <div class="container">
+      <div class="container hide-mobile">
         <h1>¡Email confirmado!</h1>
         <p>¡Ahora solo ingresa a Cefalia y comienza a estudiar!</p>
-        <a class="btn" href="index.html">Volver a home</a> 
+        <a class="btn hide-mobile" href="index.html">Volver a home</a> 
       </div>
     </div>
     <div>
-      <img src="assets/img/yeah-girl.svg" alt="500 Error">
+      <img class="hide-mobile" src="assets/img/yeah-girl.svg" alt="500 Error">
+    </div>
+  </section>
+
+  <section class="mobile">
+    <div class="background-arrow-mobile hide-full">
+      <div class="container hide-full">
+        <h1>¡Email confirmado!</h1>
+        <p>¡Ahora solo ingresa a Cefalia y comienza a estudiar!</p>
+        <div>
+          <a class="btn-mobile hide-full" href="index.html">Volver a home</a> 
+        </div>
+      </div>
+    </div>
+    <div>
+      <img class="hide-full" src="assets/img/yeah-girl.svg" alt="Yeah girl">
     </div>
   </section>
 </body>
