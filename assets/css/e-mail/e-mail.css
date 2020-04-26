@@ -7,11 +7,11 @@ body {
   font-family: 'Paytone One', sans-serif;
   height: 100vh;
   max-height: 100vh;
-  background: url("../img/background-dots-yellow.png") repeat;
+  background: url("../../img/background-dots-yellow.png") repeat;
 }
 
 .background-arrow {
-  background: url("../img/background-arrow.svg") no-repeat ; 
+  background: url("../../img/background-arrow.svg") no-repeat ; 
   background-position: top right;
   background-size: cover;
   flex-direction: column;
